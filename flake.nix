@@ -14,11 +14,11 @@
           with pkgsFor.${system};
           stdenvNoCC.mkDerivation (finalAttrs: {
             pname = "falkor";
-            version = "0.0.92";
+            version = "0.1.0-alpha";
 
             src = fetchurl {
               url = "https://github.com/Team-Falkor/app/releases/download/v${finalAttrs.version}/falkor.deb";
-              hash = "sha256-yDpYu2ehrRQuD29jcyTQla2R2IT1zfBDeWDDRnmqc8Y=";
+              hash = "sha256-L1EBJ49+g7n6NtKs1BTBD30glL/K0SerL/k5Dl2SgqM=";
             };
 
             unpackPhase = ''
